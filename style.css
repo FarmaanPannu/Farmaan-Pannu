@@ -1,9 +1,10 @@
 /* Header + Caption + Nav Menu flex box */
 .side-panel {
-    display: inline-flex;
-    border: 2px solid black;
+    display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100vh - 4rem); /* full height minus top/bottom margin */
+    width: fit-content;
+    margin-left: .5em;
 }
 /*  flex box of Header + Caption*/
 .heading,
@@ -18,32 +19,31 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: fit-content;
-    border: 2px solid red;
 }
 /* Farmaan Pannu */
 .header {
     font-family: "EB Garamond", serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 100;
     line-height: 0.95;
     letter-spacing: -0.01em;
     text-align: left;
     transform: scaleY(1.2);
-    border: 2px solid blue;
     margin-bottom: 0.25rem;
+    margin-top: 0.5em;
 
 }
 /* Caption as a whole */
 .caption {
     transform: scaleY(1.2);
-    border: 2px solid green;
     margin-bottom: 0.35rem;
+    font-size: 1.5em;
 }
 /* Caption Header */
 .caption-title {
     font-weight: 900;
     letter-spacing: -0.01em;
-    border: 2px solid purple;
+    
 
 }
 /* flex box of links*/
@@ -54,7 +54,6 @@
     font-family: "Inter", sans-serif;
     font-size: 0.8em;
     transform: scaleY(1.2);
-    border: 2px solid powderblue;
     color:black;
     margin-top: auto;
     align-items: flex-start;
@@ -63,3 +62,8 @@
 }
 
 /* individual links */
+.link{
+    font-size: 1.8em;
+    font-family: "Space Mono", monospace;
+    color: black;
+}
